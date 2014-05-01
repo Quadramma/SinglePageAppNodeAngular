@@ -14,6 +14,11 @@ app.configure(function() {
     app.use(express.logger('dev')); // log every request to the console
     app.use(express.bodyParser()); // pull information from html in POST
     app.use(express.methodOverride()); // simulate DELETE and PUT
+    app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        next();
+    });
 });
 
 

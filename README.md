@@ -8,6 +8,7 @@ http://scotch.io/tutorials/javascript/creating-a-single-page-todo-app-with-node-
 
 
 
+
 node modules
 npm install express
 npm install flat-file-db
@@ -20,5 +21,8 @@ npm install -g nodemon
 	----- index.html 	<!-- main view -->
 	- package.json 		<!-- npm configuration to install dependencies/modules -->
 	- server.js 		<!-- Node configuration -->
+
+
+CORS Support	
 
 
